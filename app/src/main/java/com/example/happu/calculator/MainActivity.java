@@ -345,9 +345,10 @@ public class MainActivity extends AppCompatActivity {
         double n1 = new Double(num1);
         double n2 = new Double(num2);
         n1 = n1 * n2;
-        AnsView.setText("Ans : " + n1);
-        Ans = "0" + n1;
-        Ans = Ans.substring(1, Ans.length());
+        String  str="0"+n1;
+        str=str.substring(1,str.length());
+        AnsView.setText(str);
+        Ans = str;
         oprtors = '9';
     }
 
